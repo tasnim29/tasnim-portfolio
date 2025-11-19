@@ -1,3 +1,4 @@
+import './globals.css';
 import ResponsiveNavbar from "@/components/Home/Navbar/ResponsiveNavbar";
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
