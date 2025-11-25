@@ -4,6 +4,8 @@ import { NavLinks } from "@/constant/constant";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
 type Props = {
@@ -28,7 +30,7 @@ const Nav = ({openNav}:Props) => {
     <div className={`fixed left-1/2 transform -translate-x-1/2 transition-all duration-700  ${
         navBg
           ? "top-12 w-[80%] h-16 bg-black opacity-60 rounded-full shadow-2xl z-20 "
-          : "top-0 w-full h-[12vh] bg-blue-950 rounded-none z-10"
+          : "top-0 w-full h-[12vh]  rounded-none z-10"
       }`}>
       <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         <Image
@@ -51,17 +53,26 @@ const Nav = ({openNav}:Props) => {
             })}
           </div>
 
-          <button
+      <div className="flex gap-5">
+            <button
             className="
-            px-6 py-2 
-            bg-gray-300
-            text-black font-semibold rounded-lg 
+            text-white font-semibold rounded-lg 
             shadow-lg hover:shadow-xl 
             transform hover:-translate-y-1 
             transition-all duration-300 cursor-pointer"
           >
-            Hire Me
+            <FaGithub size={24} />
           </button>
+          <button
+            className="
+            text-white font-semibold rounded-lg 
+            shadow-lg hover:shadow-xl 
+            transform hover:-translate-y-1 
+            transition-all duration-300 cursor-pointer"
+          >
+            <FaLinkedin size={24} />
+          </button>
+      </div>
 
           {/* burger menu */}
           <div>
