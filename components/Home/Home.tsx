@@ -5,6 +5,17 @@ const Home = () => {
     return (
         <div className='overflow-hidden'>
            <Hero></Hero>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
+           <section className='min-h-screen'></section>
         </div>
     );
 };
